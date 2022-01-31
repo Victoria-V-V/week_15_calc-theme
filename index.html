@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <main>
+
+        <section class="hometask1">
+            <div>Практическое задание №1</div>
+
+            <select name="theme" id="theme" onchange="showTheme()">
+                <option disabled selected="selected">Выберите тему страницы</option>
+                <option value="light">Светлая</option>
+                <option value="blue">Синяя</option>
+                <option value="dark">Темная</option>
+            </select>
+        </section>
+
+        <section class="hometask2">
+            <div>Практическое задание №2</div>
+            <input type="number" id="number1" placeholder="Выберите первое число">
+            <input type="number" id="number2" placeholder="Выберите второе число">
+
+            <div class="calculator">
+                <button id="add" onclick="operator='+'">+</button>
+                <button id="subtract" onclick="operator='-'">-</button>
+                <button id="divide" onclick="operator='/'">&divide;</button>
+                <button id="multiplay" onclick="operator='*'">&times;</button>
+            </div>
+
+            <button onclick="operation()">Результат:</button>
+            <div id="result"></div>
+        </section>
+
+    </main>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
