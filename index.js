@@ -37,7 +37,7 @@ function operation() {
             break;
 
         case '/':
-            if (number2==0) {
+            if (!number2) {
             result = ("На ноль делить нельзя!");
             break;
             }
